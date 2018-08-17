@@ -3,6 +3,7 @@ import React from 'react'
 // Components
 import Header from './Header'
 import Footer from './Footer'
+import ThreeJS from './ThreeJS'
 
 // Containers
 import AddTodo from '../containers/AddTodo'
@@ -15,6 +16,9 @@ const App = () => (
             <AddTodo/>
             <VisibleTodoList/>
             <Footer/>
+        </div>
+        <div className="card-container">
+            <ThreeJS/>
         </div>
     </div>
 )

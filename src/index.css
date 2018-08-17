@@ -29,6 +29,7 @@ body {
 
 .card-container {
     display: inline-block;
+    margin-bottom: 20px;
     width: 800px;
     padding: 70px;
     background-color: #ffffff;
