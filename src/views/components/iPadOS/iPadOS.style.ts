@@ -3,10 +3,15 @@ import styled from 'styled-components'
 export const Button = styled.button`
   border-radius: 5px;
   border: none;
-  background-color: rgba(0.3,0.05,0.1,0.8);
+  background-color: rgba(0.3, 0.05, 0.1, 0.8);
   color: white;
   padding: 5px 10px;
   font-size: 14px;
+
+  &:active {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0)!important;
+    background-color: rgba(0.3, 0.05, 0.1, 0.6);
+  }
 `
 
 interface iCursor {
