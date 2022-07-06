@@ -10,8 +10,8 @@ export const MenuContainer = styled('div')`
 
 export const MenuColorContainer = styled('div')`
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: stretch;
+  align-items: stretch;
 `
 
 export const MenuItemContainer = styled('div')`
@@ -22,11 +22,7 @@ export const MenuItemContainer = styled('div')`
 `
 
 export const ColorContainer = styled('div')`
-  margin-top: 25%;
-  margin-left: -40%;
-  height: 100%;
-  min-height: 40px;
-  display: flex;
+  margin: 10% 0 -10% -10%;
 `
 
 export const Circle = styled('div')`

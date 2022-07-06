@@ -18,6 +18,7 @@ export const ColorCardContainer = styled('div')<ColorProps>`
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.05);
   backdrop-filter: blur(50px);
   border-radius: 10px;
+  height: 100%;
 `
 
 export const ColorCardBorderTop = styled('div')`

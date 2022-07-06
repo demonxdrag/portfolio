@@ -3,10 +3,14 @@ import { MouseEvent } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { dispatchHovered, dispatchTarget } from '../../../state/cursor'
 import { RootState } from '../../../store'
+import GlassCard from '../GlassCard/GlassCard'
 import config from './config'
-import { Button } from './iPadOS.style'
+import { DynamicButtonContainer } from './iPadOS.style'
 
-export const DynamicButton = () => {
+interface iDynamicButton {
+  children: React.ReactNode
+}
+export const DynamicButton = (props: iDynamicButton) => {
   const dispatch = useDispatch()
   const setHovered = (payload: boolean) => dispatch(dispatchHovered(payload))
   const setTarget = (payload: HTMLElement) => dispatch(dispatchTarget(payload))
@@ -50,9 +54,9 @@ export const DynamicButton = () => {
   }
 
   return (
-    <Button onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
-      Hello
-    </Button>
+    <DynamicButtonContainer onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
+      <GlassCard>{props.children}</GlassCard>
+    </DynamicButtonContainer>
   )
 }
 

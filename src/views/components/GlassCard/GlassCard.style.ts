@@ -10,6 +10,7 @@ export const GlassCardContainer = styled('div')`
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.05);
   backdrop-filter: blur(50px);
   border-radius: 10px;
+  pointer-events: none;
 `
 
 export const GlassCardBorderTop = styled('div')`
