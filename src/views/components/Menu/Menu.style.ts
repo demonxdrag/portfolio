@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 interface OpenMenu {
   isOpen: boolean
+  isHovered?: boolean
 }
 
 export const MenuContainer = styled('div')`
@@ -44,6 +45,7 @@ export const Circle = styled('div')<OpenMenu>`
   opacity: 0.1;
   transition: 0.7s ease-in-out;
   ${({ isOpen }) => !isOpen && 'left: -80vh'};
+  ${({ isHovered }) => isHovered && 'height: 81vh; width: 81vh'};
 `
 
 export const Line = styled('div')<OpenMenu>`
@@ -52,6 +54,7 @@ export const Line = styled('div')<OpenMenu>`
   height: 80vh;
   left: 60px;
   opacity: 0.1;
-  transition: 0.6s ease-in-out;
+  transition: 1s ease-in-out;
   ${({ isOpen }) => !isOpen && 'margin-left: -100px'};
+  ${({ isHovered }) => isHovered && 'height: 75vh'};
 `
