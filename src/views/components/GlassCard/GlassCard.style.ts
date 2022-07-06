@@ -32,6 +32,7 @@ export const GlassCardContent = styled('div')`
   padding: 0 20px;
   gap: 10px;
   width: 100%;
+  height: 100%;
   border-radius: 10px;
   border-width: 2px;
   border-style: solid;
