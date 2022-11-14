@@ -1,17 +1,19 @@
 import { ColorCardBorderBottom, ColorCardBorderTop, ColorCardContainer, ColorCardContent } from './ColorCard.style'
 
-interface ColorCardProps {
-  color: 'orange' | 'magenta'
-  children?: React.ReactNode
+export interface ColorCardProps {
+	color?: 'orange' | 'magenta'
+	marker?: boolean
+	children?: React.ReactNode
 }
 const ColorCard = (props: ColorCardProps) => {
-  return (
-    <ColorCardContainer color={props.color}>
-      <ColorCardBorderTop />
-      <ColorCardContent>{props.children}</ColorCardContent>
-      <ColorCardBorderBottom />
-    </ColorCardContainer>
-  )
+	const { color = 'orange', marker = false } = props
+	return (
+		<ColorCardContainer color={color}>
+			<ColorCardBorderTop />
+			<ColorCardContent marker={marker}>{props.children}</ColorCardContent>
+			<ColorCardBorderBottom />
+		</ColorCardContainer>
+	)
 }
 
 export default ColorCard
