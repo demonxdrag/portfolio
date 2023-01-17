@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
 import cursorReducer from '../state/cursor'
+import modalReducer from '../state/modal'
 
 export const store = configureStore({
   reducer: {
-    cursor: cursorReducer
+    cursor: cursorReducer,
+    modal: modalReducer
   },
   middleware: getDefaultMiddleware =>
     getDefaultMiddleware({

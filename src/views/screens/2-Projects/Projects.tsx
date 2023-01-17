@@ -73,7 +73,7 @@ const Projects = () => {
 		{
 			project: {
 				title: 'Verønica Schweppes',
-				client: 'Verønica Schweppes Copywriter',
+				client: 'Verønica Schweppes',
 				product: 'Landing page',
 				date: '2020'
 			},
@@ -83,7 +83,7 @@ const Projects = () => {
 		{
 			project: {
 				title: 'Anava Design',
-				client: 'Anava Design Architecture Studio',
+				client: 'Anava Design Architecture',
 				product: 'Landing page',
 				date: '2020'
 			},
