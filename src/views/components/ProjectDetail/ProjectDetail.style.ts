@@ -3,7 +3,8 @@ import styled from 'styled-components'
 export const ProjectDetailContainer = styled('div')`
 	display: flex;
 	flex-direction: column;
-	width: 80%;
+	width: calc(80vw - 15px);
+	overflow: hidden;
 	margin: auto;
 	gap: 20px;
 `

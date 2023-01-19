@@ -38,7 +38,7 @@ export const Text = styled('p')`
 	font-family: 'Montserrat';
 	font-style: normal;
 	font-weight: 500;
-	font-size: 10px;
+	font-size: 12px;
 	line-height: 12px;
 	color: ${({ theme }) => theme.fontColor};
 	margin: 0;
