@@ -3,7 +3,7 @@ import { Screen } from '../../components/Screen/Screen.style'
 
 const Main = () => {
 	return (
-		<Screen>
+		<Screen id='main'>
 			<Avatar />
 		</Screen>
 	)

@@ -8,7 +8,7 @@ import Landing from './screens/3-Landing/Landing'
 
 const Home = () => {
 	return (
-		<HomeContainer>
+		<HomeContainer id="home">
 			<DynamicCursor>
 				<Menu />
 				<Main />
