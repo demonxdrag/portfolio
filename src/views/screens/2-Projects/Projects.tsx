@@ -37,8 +37,7 @@ const Projects = () => {
 				client: 'Black Play',
 				product: 'Interactive web experience',
 				date: '2020'
-			},
-			splash: 'splash.png'
+			}
 		},
 		{
 			project: {
@@ -58,6 +57,7 @@ const Projects = () => {
 				product: 'Online Portfolio',
 				date: '2020'
 			},
+			splash: 'splash.svg',
 			borderRadius: 3
 		},
 
@@ -68,6 +68,7 @@ const Projects = () => {
 				product: 'Landing page',
 				date: '2022'
 			},
+			splash: 'splash.svg',
 			borderRadius: 10
 		},
 		{
@@ -77,7 +78,6 @@ const Projects = () => {
 				product: 'Landing page',
 				date: '2020'
 			},
-			splash: 'splash.png',
 			borderRadius: 10
 		},
 		{
@@ -87,7 +87,6 @@ const Projects = () => {
 				product: 'Landing page',
 				date: '2020'
 			},
-			splash: 'splash.png',
 			borderRadius: 0
 		},
 		{
@@ -97,7 +96,6 @@ const Projects = () => {
 				product: 'Landing page',
 				date: '2019'
 			},
-			splash: 'splash.png',
 			borderRadius: 0
 		},
 		{
@@ -107,6 +105,7 @@ const Projects = () => {
 				product: 'Landing page',
 				date: '2019'
 			},
+			splash: 'splash.svg',
 			borderRadius: 5
 		},
 		{
@@ -116,6 +115,7 @@ const Projects = () => {
 				product: 'Landing page',
 				date: '2021'
 			},
+			splash: 'splash.svg',
 			borderRadius: 5
 		}
 	]

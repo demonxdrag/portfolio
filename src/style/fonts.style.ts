@@ -15,31 +15,31 @@ export default createGlobalStyle`
 `
 
 export const Title = styled('h4')`
-  font-family: 'Varela-Round';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  color: ${({ theme }) => theme.fontColor};
-  margin: 0;
+	font-family: 'Varela-Round';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 22px;
+	color: ${({ theme }) => theme.fontColor};
+	margin: 0;
 `
 
 export const AvatarTitle = styled('h4')`
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  color: ${({ theme }) => theme.fontColor};
-  margin: 0;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	color: ${({ theme }) => theme.fontColor};
+	margin: 0;
 `
 
 export const Text = styled('p')`
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 10px;
-  line-height: 12px;
-  color: ${({ theme }) => theme.fontColor};
-  margin: 0;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 10px;
+	line-height: 12px;
+	color: ${({ theme }) => theme.fontColor};
+	margin: 0;
 `

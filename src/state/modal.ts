@@ -1,8 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit'
+import { ReactNode } from 'react'
 
 export interface CursorState {
 	open: boolean
-	content: HTMLElement | null
+	content: ReactNode | null
 }
 
 const initialState: CursorState = {

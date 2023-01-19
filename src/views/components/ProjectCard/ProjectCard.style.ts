@@ -5,6 +5,11 @@ export const ProjectSplash = styled('img')`
 	width: 200px;
 `
 
+export const ProjectCardContainer = styled('div')`
+	display: flex;
+	padding: 30px;
+`
+
 export const ProjectCardContent = styled('div')`
 	display: flex;
 	padding: 10px 0;

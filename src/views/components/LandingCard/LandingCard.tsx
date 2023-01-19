@@ -12,7 +12,7 @@ export interface iLandingCard {
 	borderRadius?: number
 }
 const LandingCard = (props: iLandingCard) => {
-	const { project, splash = 'splash.svg', borderRadius = 10 } = props
+	const { project, splash = 'splash.png', borderRadius = 10 } = props
 	const parsedLandingName = project.title.toLowerCase().split(' ').join('-')
 	return (
 		<LandingCardContent>

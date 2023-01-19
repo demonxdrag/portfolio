@@ -1,10 +1,11 @@
 import gsap from 'gsap'
+import config from '../iPadOS/config'
 import { Fragment, useEffect, useRef } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { dispatchOpen } from '../../../state/modal'
 import { RootState } from '../../../store'
-import config from '../iPadOS/config'
-import { ModalBackdrop, ModalContainer } from './Modal.style'
+import { ModalBackdrop, ModalContainer, ModalContent, ModalTopBar } from './Modal.style'
+import ModalTrigger from './ModalTrigger'
 
 export const Modal = () => {
 	const modal = useRef(null)
@@ -22,20 +23,24 @@ export const Modal = () => {
 			const bounding = target.getBoundingClientRect()
 			const from: gsap.TweenVars = {
 				duration: 0.3,
+				scale: 1.1,
 				borderRadius: config.radius,
 				width: bounding.width,
 				height: bounding.height,
 				left: bounding.left,
 				top: bounding.top,
-				pointerEvents: 'none'
+				pointerEvents: 'none',
+				overflow: 'hidden'
 			}
 			const to: gsap.TweenVars = {
 				duration: 0.3,
+				scale: 1,
 				width: '80vw',
 				height: '80vh',
 				left: '10vw',
 				top: '10vh',
-				pointerEvents: 'unset'
+				pointerEvents: 'unset',
+				overflow: 'auto'
 			}
 			const op1: gsap.TweenVars = {
 				opacity: 1,
@@ -52,12 +57,12 @@ export const Modal = () => {
 
 			// Backdrop
 			const bk1: gsap.TweenVars = {
-				backdropFilter: 'blur(5px)',
+				opacity: 1,
 				duration: 0.3,
 				pointerEvents: 'all'
 			}
 			const bk0: gsap.TweenVars = {
-				backdropFilter: 'blur(0px)',
+				opacity: 0,
 				duration: 0.3,
 				pointerEvents: 'none'
 			}
@@ -72,7 +77,10 @@ export const Modal = () => {
 		<Fragment>
 			<ModalBackdrop ref={backdrop} onClick={() => setOpen(false)}></ModalBackdrop>
 			<ModalContainer ref={modal} borderRadius={config.radius}>
-				{/* {content} */}
+				<ModalTopBar>
+					<ModalTrigger isOpen={open} setOpen={setOpen} />
+				</ModalTopBar>
+				<ModalContent>{content}</ModalContent>
 			</ModalContainer>
 		</Fragment>
 	)
