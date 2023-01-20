@@ -11,11 +11,8 @@ const Menu = () => {
 	const menuRef = useRef(null)
 
 	const handleScroll = (screenName: string) => {
-		// const scrollContainer = document.getElementById('home')
-		// if (scrollContainer) {
 		const screen = document.getElementById(screenName)
 		screen?.scrollIntoView({ behavior: 'smooth' })
-		// }
 	}
 
 	return (
@@ -39,10 +36,10 @@ const Menu = () => {
 						<img src='icons/design.svg' alt='Landings' />
 						<Text>Landings</Text>
 					</DynamicButton>
-					{/* <DynamicButton onClick={() => handleScroll('main')}>
+					<DynamicButton onClick={() => handleScroll('bio')}>
 						<img src='icons/bio.svg' alt='Bio' />
 						<Text>Bio</Text>
-					</DynamicButton> */}
+					</DynamicButton>
 				</MenuItemContainer>
 			</MenuColorContainer>
 		</MenuContainer>

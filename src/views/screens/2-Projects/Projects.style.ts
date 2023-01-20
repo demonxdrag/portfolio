@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const ProjectsScreenContainer = styled('div')`
-	padding-top: 40px;
 	display: flex;
 	flex-direction: column;
 	gap: 40px;

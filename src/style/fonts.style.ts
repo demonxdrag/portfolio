@@ -20,7 +20,17 @@ export const Title = styled('h4')`
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 22px;
-	color: ${({ theme }) => theme.fontColor};
+	color: ${({ theme }) => theme.titleColor};
+	margin: 0;
+`
+
+export const SubTitle = styled('h5')`
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 12px;
+	color: ${({ theme }) => theme.titleColor};
 	margin: 0;
 `
 
