@@ -26,7 +26,7 @@ const Architecture = (props: iArchitecture) => {
 		<ArchContainer>
 			{stack.map(arch => (
 				<ArchItem key={arch}>
-					<img src={`/arch/${arch}.svg`} alt={`${arch} icon`} />
+					<img src={`/projects/arch/${arch}.svg`} alt={`${arch} icon`} />
 					<Text>
 						{arch
 							.split('-')

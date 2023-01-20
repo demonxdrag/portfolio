@@ -52,7 +52,7 @@ const Projects = () => {
 						<CardDecorator>
 							<ColorCard color='orange' />
 						</CardDecorator>
-						<GlassCard>
+						<DynamicButton>
 							<YearListContainer>
 								<YearCard year={2016}>
 									<YearDescription>
@@ -90,13 +90,13 @@ const Projects = () => {
 									</YearDescription>
 								</YearCard>
 							</YearListContainer>
-						</GlassCard>
+						</DynamicButton>
 					</Relative>
 					<Relative>
 						<CardDecorator>
 							<ColorCard color='magenta' />
 						</CardDecorator>
-						<GlassCard>
+						<DynamicButton>
 							<YearListContainer>
 								<YearCard year={2013} color={'magenta'}>
 									<YearDescription>
@@ -113,7 +113,7 @@ const Projects = () => {
 									</YearDescription>
 								</YearCard>
 							</YearListContainer>
-						</GlassCard>
+						</DynamicButton>
 					</Relative>
 				</BioScreenSplit>
 			</BioScreenContainer>
