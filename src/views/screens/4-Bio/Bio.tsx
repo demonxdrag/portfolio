@@ -1,5 +1,6 @@
 import { SubTitle, Text, Title } from '../../../style/fonts.style'
 import ColorCard from '../../components/ColorCard/ColorCard'
+import ColorGlass from '../../components/ColorGlassCard/ColorGlass'
 import GlassCard from '../../components/GlassCard/GlassCard'
 import DynamicButton from '../../components/iPadOS/DynamicButton'
 import { Screen } from '../../components/Screen/Screen.style'
@@ -18,13 +19,14 @@ const Projects = () => {
 			<BioScreenContainer>
 				<BioScreenSplit>
 					<GlassCard>
-						<ColorCard marker={true} />
-						<TextGroup>
-							<Title>
-								ADRIAN PAPPALARDO <SoftText>EST 1995</SoftText>
-							</Title>
-							<Text>Creative Developer</Text>
-						</TextGroup>
+						<ColorGlass color='orange'>
+							<TextGroup>
+								<Title>
+									ADRIAN PAPPALARDO <SoftText>EST 1995</SoftText>
+								</Title>
+								<Text>Creative Developer</Text>
+							</TextGroup>
+						</ColorGlass>
 					</GlassCard>
 					<TextGroup>
 						<Text>

@@ -10,6 +10,6 @@ export const ProjectContainer = styled('div')`
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
-	width: 600px;
+	max-width: 600px;
 	margin: auto;
 `

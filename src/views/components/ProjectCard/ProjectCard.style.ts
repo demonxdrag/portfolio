@@ -12,12 +12,20 @@ export const ProjectCardContainer = styled('div')`
 
 export const ProjectCardContent = styled('div')`
 	display: flex;
-	padding: 10px 0;
 	gap: 20px;
 	width: 100%;
-	height: 100px;
+	justify-content: start;
+	align-items: stretch;
+`
+
+export const ProjectCardContentGroup = styled('div')`
+	display: flex;
+	gap: 20px;
 	justify-content: start;
 	align-items: center;
+	@media only screen and (max-width: ${({ theme }) => theme.mobile}) {
+		flex-direction: column;
+	}
 `
 
 export const TextGroup = styled('div')`

@@ -17,15 +17,21 @@ export const ProjectDetailSplit = styled('div')`
 	padding: 20px;
 	gap: 20px;
 
+	@media only screen and (max-width: ${({ theme }) => theme.mobile}) {
+		flex-direction: column;
+	}
+
 	& > div {
 		width: 50%;
 		flex-shrink: 1;
 		text-align: left;
+		@media only screen and (max-width: ${({ theme }) => theme.mobile}) {
+			width: 100%;
+		}
 	}
 `
 
 export const TextGroup = styled('div')`
-	padding: 10px;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;

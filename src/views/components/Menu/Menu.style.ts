@@ -11,6 +11,7 @@ export const MenuContainer = styled('div')`
   height: 100vh;
   display: flex;
   align-items: center;
+  z-index: 100;
 `
 
 export const MenuColorContainer = styled('div')<OpenMenu>`

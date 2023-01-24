@@ -8,7 +8,7 @@ export interface ColorCardProps {
 const ColorCard = (props: ColorCardProps) => {
 	const { color = 'orange', marker = false } = props
 	return (
-		<ColorCardContainer color={color}>
+		<ColorCardContainer color={color} marker={marker}>
 			<ColorCardBorderTop />
 			<ColorCardContent marker={marker}>{props.children}</ColorCardContent>
 			<ColorCardBorderBottom />

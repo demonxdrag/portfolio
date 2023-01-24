@@ -7,6 +7,7 @@ const colors = {
 
 interface ColorProps {
 	color: 'orange' | 'magenta'
+	marker?: boolean
 }
 interface MarkerProps {
 	marker: boolean
@@ -17,11 +18,16 @@ export const ColorCardContainer = styled('div')<ColorProps>`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	align-self: stretch;
 	background: ${({ color }) => colors[color]};
 	box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.05);
 	backdrop-filter: blur(50px);
 	border-radius: 10px;
+	${({ marker }) =>
+		!marker &&
+		`
 	height: 100%;
+  	`}
 `
 
 export const ColorCardBorderTop = styled('div')`

@@ -5,6 +5,7 @@ export const ArchContainer = styled('div')`
 	height: 100px;
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 	gap: 20px;
 `
 

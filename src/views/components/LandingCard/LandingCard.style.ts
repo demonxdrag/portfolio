@@ -36,7 +36,9 @@ export const TextGroup = styled('div')<textGroupProps>`
 	opacity: 0;
 	transition: all 0.5s;
 
-	&:hover {
+	&:hover,
+	&:focus,
+	&:active {
 		opacity: 1;
 	}
 `

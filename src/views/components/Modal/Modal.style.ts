@@ -10,7 +10,7 @@ export const ModalContainer = styled('div')<modalProps>`
 	box-shadow: 0 7px 15px rgba(0, 0, 0, 0);
 	pointer-events: none;
 	overflow: hidden;
-	`
+`
 
 export const ModalBackdrop = styled('div')`
 	position: fixed;

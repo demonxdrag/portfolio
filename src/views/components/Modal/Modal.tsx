@@ -6,6 +6,8 @@ import { dispatchOpen } from '../../../state/modal'
 import { RootState } from '../../../store'
 import { ModalBackdrop, ModalContainer, ModalContent, ModalTopBar } from './Modal.style'
 import ModalTrigger from './ModalTrigger'
+import useWindow from '../iPadOS/useWindow'
+import theme from '../../../theme'
 
 export const Modal = () => {
 	const modal = useRef(null)
@@ -16,9 +18,11 @@ export const Modal = () => {
 	const dispatch = useDispatch()
 	const open = useSelector((state: RootState) => state.modal.open)
 	const setOpen = (payload: boolean) => dispatch(dispatchOpen(payload))
+	const windowData = useWindow()
 
 	useEffect(() => {
 		if (target) {
+			const targetSize = windowData.width <= Number(theme.mobile) ? 100 : 80
 			// Modal
 			const bounding = target.getBoundingClientRect()
 			const from: gsap.TweenVars = {
@@ -35,8 +39,8 @@ export const Modal = () => {
 			const to: gsap.TweenVars = {
 				duration: 0.3,
 				scale: 1,
-				width: '80vw',
-				height: '80vh',
+				width: `${targetSize}vw`,
+				height: `${targetSize}vh`,
 				left: '10vw',
 				top: '10vh',
 				pointerEvents: 'unset',

@@ -51,8 +51,11 @@ export const ModalTriggerInnerCircle = styled('div')<OpenModal>`
   height: 70px;
   border-radius: 100px;
   border: 1px dotted ${({ theme }) => theme.lineColor};
-  opacity: 0.1;
   transition: 0.5s;
+  opacity: 0;
+  ${({isOpen}) => isOpen && `
+    opacity: 0.1;
+  `}
 `
 
 export const ModalTriggerOuterCircle = styled('div')<OpenModal>`
@@ -64,8 +67,11 @@ export const ModalTriggerOuterCircle = styled('div')<OpenModal>`
   height: 80px;
   border-radius: 100px;
   border: 1px solid ${({ theme }) => theme.lineColor};
-  opacity: 0.1;
   transition: 0.5s;
+  opacity: 0;
+  ${({isOpen}) => isOpen && `
+    opacity: 0.1;
+  `}
 `
 
 export const ModalTriggerLine = styled('div')<OpenModal>`
@@ -78,6 +84,9 @@ export const ModalTriggerLine = styled('div')<OpenModal>`
   width: 0px;
   height: 80px;
   border-right: 1px solid ${({ theme }) => theme.lineColor};
-  opacity: 0.1;
   transition: 0.5s;
+  opacity: 0;
+  ${({isOpen}) => isOpen && `
+    opacity: 0.1;
+  `}
 `
