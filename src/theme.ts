@@ -7,9 +7,9 @@ const theme = {
 	titleColor: '#6F3D58',
 	fontColor: '#888888',
 	lineColor: '#888888',
-	mobile: '600px',
-	tablet: '777px',
-	desktop: '1030px'
+	mobile: '777px',
+	tablet: '1030px',
+	desktop: '1980px'
 }
 
 export default theme

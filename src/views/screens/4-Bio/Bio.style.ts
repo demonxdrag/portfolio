@@ -5,6 +5,11 @@ export const BioScreenContainer = styled('div')`
 	padding-top: 40px;
 	display: flex;
 	flex-shrink: 0;
+	@media only screen and (max-width: ${({ theme }) => theme.tablet}) {
+		flex-direction: column;
+		padding-bottom: 40px;
+		gap: 40px;
+	}
 	@media only screen and (max-width: ${({ theme }) => theme.mobile}) {
 		flex-direction: column;
 		padding-bottom: 40px;
@@ -18,7 +23,7 @@ export const BioScreenSplit = styled('div')`
 	gap: 40px;
 	flex-basis: 50%;
 	flex-grow: 1;
-	padding: 0 80px;
+	padding: 0 4vw;
 	text-align: left;
 	@media only screen and (max-width: ${({ theme }) => theme.mobile}) {
 		padding: 0 20px;

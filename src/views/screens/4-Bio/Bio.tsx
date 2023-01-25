@@ -13,6 +13,18 @@ const Projects = () => {
 	const currentDate = new Date()
 	const exDate = new Date(currentDate.getTime() - initialDate.getTime())
 
+	const handleDownload = () => {
+		fetch('/cv.pdf').then(response => {
+            response.blob().then(blob => {
+                const fileURL = window.URL.createObjectURL(blob);
+                let alink = document.createElement('a');
+                alink.href = fileURL;
+                alink.download = 'CV - Adrian Pappalardo - 2023.pdf';
+                alink.click();
+            })
+        })
+	}
+
 	return (
 		<Screen id='bio'>
 			<Title>Bio</Title>
@@ -44,7 +56,7 @@ const Projects = () => {
 							<Text>Have a nice day!</Text>
 						</TextGroup>
 					</HeightGroup>
-					<DynamicButton>
+					<DynamicButton onClick={() => handleDownload()}>
 						<ColorCard marker={true} />
 						<Text>Download CV</Text>
 					</DynamicButton>
