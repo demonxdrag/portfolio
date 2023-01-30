@@ -6,7 +6,7 @@ import DynamicButton from '../../components/iPadOS/DynamicButton'
 import { Screen } from '../../components/Screen/Screen.style'
 import YearCard from '../../components/YearCard/YearCard'
 import { YearListContainer, YearDescription } from '../../components/YearCard/YearCard.style'
-import { BigText, BioScreenContainer, BioScreenSplit, CardDecorator, HeightGroup, Relative, SoftText, TextGroup } from './Bio.style'
+import { BigText, BioScreenContainer, BioScreenSplit, CardDecorator, HeightGroup, IconLink, Relative, SoftText, TextGroup } from './Bio.style'
 
 const Projects = () => {
 	const initialDate = new Date('01 Mar 2016')
@@ -15,14 +15,14 @@ const Projects = () => {
 
 	const handleDownload = () => {
 		fetch('/cv.pdf').then(response => {
-            response.blob().then(blob => {
-                const fileURL = window.URL.createObjectURL(blob);
-                let alink = document.createElement('a');
-                alink.href = fileURL;
-                alink.download = 'CV - Adrian Pappalardo - 2023.pdf';
-                alink.click();
-            })
-        })
+			response.blob().then(blob => {
+				const fileURL = window.URL.createObjectURL(blob)
+				let alink = document.createElement('a')
+				alink.href = fileURL
+				alink.download = 'CV - Adrian Pappalardo - 2023.pdf'
+				alink.click()
+			})
+		})
 	}
 
 	return (
@@ -56,9 +56,30 @@ const Projects = () => {
 							<Text>Have a nice day!</Text>
 						</TextGroup>
 						<TextGroup>
-							<Text>https://github.com/demonxdrag</Text>
-							<Text>https://angel.co/u/adrian-pappalardo</Text>
-							<Text>https://behance.net/adrianpappalardo</Text>
+							<IconLink>
+								<a href='https://github.com/demonxdrag' target='_blank' rel='noreferrer'>
+									<img src='icons/github.svg' height={30} alt='github' />
+								</a>
+								<a href='https://github.com/demonxdrag' target='_blank' rel='noreferrer'>
+									<span>Github</span>
+								</a>
+							</IconLink>
+							<IconLink>
+								<a href='https://angel.co/u/adrian-pappalardo' target='_blank' rel='noreferrer'>
+									<img src='icons/angel.svg' height={30} alt='angel' />
+								</a>
+								<a href='https://angel.co/u/adrian-pappalardo' target='_blank' rel='noreferrer'>
+									<span>Angel List</span>
+								</a>
+							</IconLink>
+							<IconLink>
+								<a href='https://behance.net/adrianpappalardo' target='_blank' rel='noreferrer'>
+									<img src='icons/behance.svg' height={30} alt='behance' />
+								</a>
+								<a href='https://behance.net/adrianpappalardo' target='_blank' rel='noreferrer'>
+									<span>Behance</span>
+								</a>
+							</IconLink>
 						</TextGroup>
 					</HeightGroup>
 					<DynamicButton onClick={() => handleDownload()}>

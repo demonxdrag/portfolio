@@ -15,7 +15,7 @@ export const BioScreenContainer = styled('div')`
 		padding-bottom: 40px;
 		gap: 40px;
 	}
-	`
+`
 
 export const BioScreenSplit = styled('div')`
 	display: flex;
@@ -51,7 +51,7 @@ export const HeightGroup = styled('div')`
 	display: flex;
 	flex-direction: column;
 	gap: 40px;
-	margin: 80px 0;
+	margin: 40px 0;
 `
 
 export const Relative = styled('div')`
@@ -64,4 +64,15 @@ export const CardDecorator = styled('div')`
 	left: -15px;
 	z-index: -10;
 	bottom: 50px;
+`
+
+export const IconLink = styled('div')`
+	display: flex;
+	gap: 10px;
+	align-items: center;
+
+	& > a {
+		font-size: 14px;
+		font-weight: 400;
+	}
 `
