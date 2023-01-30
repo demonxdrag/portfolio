@@ -55,6 +55,11 @@ const Projects = () => {
 							<Text>If you found something of your interest and would like to work together, contact me! details are in my CV</Text>
 							<Text>Have a nice day!</Text>
 						</TextGroup>
+						<TextGroup>
+							<Text>https://github.com/demonxdrag</Text>
+							<Text>https://angel.co/u/adrian-pappalardo</Text>
+							<Text>https://behance.net/adrianpappalardo</Text>
+						</TextGroup>
 					</HeightGroup>
 					<DynamicButton onClick={() => handleDownload()}>
 						<ColorCard marker={true} />
