@@ -1,12 +1,13 @@
+import { BigText, BioScreenContainer, BioScreenSplit, CardDecorator, HeightGroup, IconLink, Relative, SoftText, TextGroup } from './Bio.style'
 import { SubTitle, Text, Title } from '../../../style/fonts.style'
+import { YearDescription, YearListContainer } from '../../components/YearCard/YearCard.style'
+
 import ColorCard from '../../components/ColorCard/ColorCard'
 import ColorGlass from '../../components/ColorGlassCard/ColorGlass'
-import GlassCard from '../../components/GlassCard/GlassCard'
 import DynamicButton from '../../components/iPadOS/DynamicButton'
+import GlassCard from '../../components/GlassCard/GlassCard'
 import { Screen } from '../../components/Screen/Screen.style'
 import YearCard from '../../components/YearCard/YearCard'
-import { YearListContainer, YearDescription } from '../../components/YearCard/YearCard.style'
-import { BigText, BioScreenContainer, BioScreenSplit, CardDecorator, HeightGroup, IconLink, Relative, SoftText, TextGroup } from './Bio.style'
 
 const Projects = () => {
 	const initialDate = new Date('01 Mar 2016')
@@ -94,25 +95,18 @@ const Projects = () => {
 						</CardDecorator>
 						<DynamicButton>
 							<YearListContainer>
-								<YearCard year={2016}>
+								<YearCard year={2022}>
 									<YearDescription>
-										<SubTitle>Cloud Service Engineer</SubTitle>
-										<Text>English Connection</Text>
-										<Text>9 months - Madrid</Text>
+										<SubTitle>Full-stack Developer</SubTitle>
+										<Text>EVPassport</Text>
+										<Text>1 year - Current - Barcelona</Text>
 									</YearDescription>
 								</YearCard>
-								<YearCard year={2017}>
+								<YearCard year={2021}>
 									<YearDescription>
-										<SubTitle>Product Development Manager</SubTitle>
-										<Text>American Language Academy</Text>
-										<Text>3 years - Madrid</Text>
-									</YearDescription>
-								</YearCard>
-								<YearCard year={2018}>
-									<YearDescription>
-										<SubTitle>IT-Consultant</SubTitle>
-										<Text>AKKA Technologies</Text>
-										<Text>8 months - Geneva/Nice</Text>
+										<SubTitle>Full-stack Developer</SubTitle>
+										<Text>Hedyla Technologies</Text>
+										<Text>2 years - Barcelona</Text>
 									</YearDescription>
 								</YearCard>
 								<YearCard year={2020}>
@@ -122,11 +116,25 @@ const Projects = () => {
 										<Text>1 year - Madrid</Text>
 									</YearDescription>
 								</YearCard>
-								<YearCard year={2021}>
+								<YearCard year={2018}>
 									<YearDescription>
-										<SubTitle>Front-end Developer</SubTitle>
-										<Text>Hedyla Technologies</Text>
-										<Text>2 years - Barcelona</Text>
+										<SubTitle>IT-Consultant</SubTitle>
+										<Text>AKKA Technologies</Text>
+										<Text>8 months - Geneva/Nice</Text>
+									</YearDescription>
+								</YearCard>
+								<YearCard year={2017}>
+									<YearDescription>
+										<SubTitle>Product Development Manager</SubTitle>
+										<Text>American Language Academy</Text>
+										<Text>3 years - Madrid</Text>
+									</YearDescription>
+								</YearCard>
+								<YearCard year={2016}>
+									<YearDescription>
+										<SubTitle>Cloud Service Engineer</SubTitle>
+										<Text>English Connection</Text>
+										<Text>9 months - Madrid</Text>
 									</YearDescription>
 								</YearCard>
 							</YearListContainer>
