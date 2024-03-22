@@ -99,7 +99,7 @@ const Projects = () => {
 									<YearDescription>
 										<SubTitle>Full-stack Developer</SubTitle>
 										<Text>EVPassport</Text>
-										<Text>1 year - Current - Barcelona</Text>
+										<Text>1 year - Barcelona</Text>
 									</YearDescription>
 								</YearCard>
 								<YearCard year={2021}>
@@ -146,18 +146,18 @@ const Projects = () => {
 						</CardDecorator>
 						<DynamicButton>
 							<YearListContainer>
-								<YearCard year={2013} color={'magenta'}>
-									<YearDescription>
-										<SubTitle>Bachelor's in Computer Engineering</SubTitle>
-										<Text>Universidad Carlos III de Madrid</Text>
-										<Text>4 years - Madrid</Text>
-									</YearDescription>
-								</YearCard>
 								<YearCard year={2017} color={'magenta'}>
 									<YearDescription>
 										<SubTitle>Master's in Product design</SubTitle>
 										<Text>ESDesign Barcelona</Text>
 										<Text>1 year - Online</Text>
+									</YearDescription>
+								</YearCard>
+								<YearCard year={2013} color={'magenta'}>
+									<YearDescription>
+										<SubTitle>Bachelor's in Computer Engineering</SubTitle>
+										<Text>Universidad Carlos III de Madrid</Text>
+										<Text>4 years - Madrid</Text>
 									</YearDescription>
 								</YearCard>
 							</YearListContainer>
