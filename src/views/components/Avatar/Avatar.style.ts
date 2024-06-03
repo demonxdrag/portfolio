@@ -17,11 +17,7 @@ export const AvatarLineArt = styled('div')`
 	margin-bottom: -700px;
 `
 
-interface AvatarViewInterface {
-	show: boolean
-}
-export const AvatarView = styled('div')<AvatarViewInterface>`
-	display: ${({ show }) => (show ? 'block' : 'none')};
+export const AvatarView = styled('div')`
 	height: 45vh;
 	margin-top: 30vh;
 `

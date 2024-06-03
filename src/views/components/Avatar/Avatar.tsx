@@ -1,32 +1,29 @@
-import { Suspense, useRef, useState } from 'react'
-import { AvatarTitle } from '../../../style/fonts.style'
-import GlassCard from '../GlassCard/GlassCard'
 import { AvatarContainer, AvatarLineArt, AvatarName, AvatarView } from './Avatar.style'
+import { Suspense, useRef } from 'react'
+
+import { AvatarTitle } from '../../../style/fonts.style'
 import { Canvas } from '@react-three/fiber'
-import { OrbitControls } from '@react-three/drei'
+import GlassCard from '../GlassCard/GlassCard'
 import { Model } from './Model'
 
 const Avatar = () => {
-	const avatarRef = useRef(null)
 	const bodyRef = useRef(null)
-	const [toggleBody, setBody] = useState(true)
 
 	return (
 		<AvatarContainer>
 			<AvatarLineArt>
 				<img src='line-art.svg' width={300} alt='line-art' />
 			</AvatarLineArt>
-			<AvatarView ref={bodyRef} show={toggleBody}>
+			<AvatarView ref={bodyRef}>
 				<Canvas camera={{ position: [2, 0, 12.25], fov: 15 }}>
-					<ambientLight intensity={1.25} />
-					<ambientLight intensity={0.1} />
-					<directionalLight intensity={0.4} />
+					<ambientLight intensity={1.5} />
+					<ambientLight intensity={0.5} />
+					<directionalLight intensity={0.7} />
 					<Suspense fallback={null}>
 						<Model position={[1, -1.3, 6]} />
 					</Suspense>
 				</Canvas>
 			</AvatarView>
-			<AvatarView ref={avatarRef} show={!toggleBody}></AvatarView>
 			{/* <img src='profile.png' width={200} alt='Profile' /> */}
 			<AvatarName>
 				<GlassCard>
